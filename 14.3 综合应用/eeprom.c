@@ -29,7 +29,7 @@ void E2Read(unsigned char *buf, unsigned char addr,unsigned char len)
 }
 void E2Write(unsigned char *buf, unsigned char addr, unsigned char len)
 {
-	while(len--)
+	while(len>0)
 	{
 		do{
 			I2CStart();
